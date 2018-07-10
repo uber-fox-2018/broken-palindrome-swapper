@@ -1,4 +1,5 @@
 /**
+
  * @function palindromeSwapper
  * menukar 2 huruf berurutan dari n = 0 sampai n-1
  * contoh: makan => amkan, mkaan, maakn, makna
