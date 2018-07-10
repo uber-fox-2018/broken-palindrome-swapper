@@ -11,13 +11,13 @@ function palindromeSwapper(str) {
     newStr = ''
     for (var j = 0; j < str.length; j++) {
     
-      if (i === j) {
+      if (i === j && str[j+1] != undefined) {
         newStr += str[j+1]
         newStr += str[i]
         j++;
-      } else {
-        newStr += (str[j] == undefined ? '' : str[j])
       }
+      else  newStr += str[j]
+      
     }
     console.log(newStr, str)
     if (isPalindrome(newStr)) return true;
@@ -37,6 +37,6 @@ function isPalindrome(str) {
 }
 
 console.log(palindromeSwapper('arcecar')); // TRUE
-console.log(palindromeSwapper('makan'));
+// console.log(palindromeSwapper('makan'));
 // console.log(palindromeSwapper('racecar')); // TRUE
 // console.log(palindromeSwapper('recacar')); // FALSE
