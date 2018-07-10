@@ -19,7 +19,7 @@ function palindromeSwapper(str) {
       else  newStr += str[j]
       
     }
-    console.log(newStr, str)
+    // console.log(newStr, str)
     if (isPalindrome(newStr)) return true;
   }
   return false;
@@ -32,11 +32,10 @@ function palindromeSwapper(str) {
  * @returns {boolean} true bila kata adalah palindrom
  */
 function isPalindrome(str) {
-  if (str.split('').reverse().join() === str) return console.log(true);
-  return console.log(false);
+  return (str.split('').reverse().join('') === str ? true : false)
 }
 
 console.log(palindromeSwapper('arcecar')); // TRUE
-// console.log(palindromeSwapper('makan'));
-// console.log(palindromeSwapper('racecar')); // TRUE
-// console.log(palindromeSwapper('recacar')); // FALSE
+console.log(palindromeSwapper('makam'));
+console.log(palindromeSwapper('racecar')); // TRUE
+console.log(palindromeSwapper('recacar')); // FALSE
